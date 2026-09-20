@@ -1,1 +1,1 @@
-{"name":"wreck-destruction-playground","version":"1.0.0","private":true,"scripts":{"start":"node server.js","check":"node --check game.js && node --check server.js"}}
+{"name":"destruction-simulator","version":"1.0.0","private":true,"scripts":{"start":"node server.js","check":"node --check game.js && node --check server.js"}}

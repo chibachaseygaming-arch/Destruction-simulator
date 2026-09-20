@@ -1,4 +1,4 @@
-# WRECK
+# Destruction Simulator
 
 A third-person 3D destruction playground with 100 unlockable weapons. Start with a hammer, earn 12 XP for every destroyed block, and unlock guns at level 50. Level requirements are 100 XP, then 160, 200, 240, 280, and so on, adding 40 XP per level after level 2. Extra XP carries into the next level. Level and equipped weapon are saved locally in your browser. Existing saves retain their level, weapons, and percentage of progress when upgrading to the new XP curve.
 
