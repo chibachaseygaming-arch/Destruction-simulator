@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {required,load,award}=require('./progression');
+assert.deepEqual([1,2,3,4,5].map(required),[100n,160n,200n,240n,280n]);
+const state=load();award(state,99);assert.deepEqual(state,{level:1,xp:99n});
+award(state,13);assert.deepEqual(state,{level:2,xp:12n});
+award(state,148);assert.deepEqual(state,{level:3,xp:0n});
+award(state,450);assert.deepEqual(state,{level:5,xp:10n});
+const migrated=load({xp:1308});assert.equal(migrated.level,14);assert.equal(migrated.xp,required(14)*8n/100n);
+assert.deepEqual(load({version:3,level:14,xp:migrated.xp.toString()}),migrated);
+assert.deepEqual(load({version:2,level:14,xp:'163840'}),migrated);
+assert.deepEqual(load({version:2,level:2,xp:'250'}),{level:2,xp:80n});
+const high={level:60,xp:required(60)-1n};award(high,1);assert.deepEqual(high,{level:61,xp:0n});
+const max={level:99,xp:required(99)-1n};award(max,500);assert.deepEqual(max,{level:100,xp:0n});award(max,12);assert.equal(max.xp,0n);
+console.log('PASS: increasing thresholds, carryover, multiple levels, legacy migration, save reload, large exact XP, max level.');

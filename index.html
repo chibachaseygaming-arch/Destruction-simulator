@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WRECK / Destruction Playground</title><link rel="stylesheet" href="style.css"></head>
+<body><canvas id="game"></canvas>
+<div id="hud">
+<header><a class="brand">WRECK<span>™</span><small>DESTRUCTION PLAYGROUND</small></a><div class="world"><i></i> SANDBOX 01 <span>/</span> THE WORKS</div><button id="armoryButton">ARSENAL <kbd>Q</kbd></button></header>
+<section class="mission"><div class="eyebrow">MAKE A LITTLE CHAOS</div><h1>Nothing here<br>is permanent.</h1><p>Break the blocks. Build your reputation.</p><div class="objective"><span>01</span><div>DEMOLISH THE WORKS<small id="objective">0 / 280 blocks destroyed</small></div><svg width="30" height="30"><circle cx="15" cy="15" r="12" fill="none" stroke="#c1ff55" stroke-width="2"/></svg></div></section>
+<section class="stats"><div><small>DESTRUCTION</small><strong id="score">000,000</strong></div><div><small>DEBRIS IN MOTION</small><strong id="debris">00</strong></div></section>
+<div id="crosshair"><span></span></div><div id="hitmark">✕</div><div id="toast" role="status">Welcome to The Works. Make yourself destructive.</div>
+<footer><section class="weapon"><div class="weapon-icon">⚒</div><div><small id="weaponType">STARTER / MELEE</small><h2 id="weaponName">The Hammer</h2><p id="weaponDetail">HEAVY IMPACT <span>•</span> UNLIMITED AMMO</p></div><kbd>1</kbd></section><section class="progress"><div><strong>LEVEL <b id="level">01</b></strong><small id="xp">0 / 100 XP</small></div><div class="track"><div id="xpBar"></div></div><p id="nextUnlock">NEXT: SLEDGEHAMMER AT LEVEL 2 <span>GUNS AT LVL 50 ↗</span></p></section><button id="reset">↻ REBUILD YARD <kbd>R</kbd></button></footer>
+<div class="controls"><span><kbd>W A S D</kbd> MOVE</span><span><kbd>MOUSE</kbd> LOOK</span><span><kbd>CLICK</kbd> SMASH</span><span><kbd>SPACE</kbd> JUMP</span><span><kbd>SHIFT</kbd> SPRINT</span><span><kbd>Q</kbd> 100 WEAPONS</span></div>
+<button id="play">ENTER THE YARD <span>↗</span><small>Click to capture mouse • Esc to release</small></button>
+<div id="pauseHint" hidden>PAUSED · Click to resume</div>
+</div>
+<dialog id="armory"><div class="modal-head"><div><div class="eyebrow">TOOLS OF TOTAL DESTRUCTION</div><h2>The arsenal<span> / 100</span></h2></div><button id="closeArmory">BACK TO YARD ✕</button></div><div class="arsenal-info"><span>Every level unlocks another way to wreck.</span><span>01–49 MELEE & POWERS · 50–100 GUNS & TECH</span></div><div id="weapons"></div></dialog>
+<script src="vendor/three.min.js"></script><script src="progression.js"></script><script src="game.js"></script></body></html>
