@@ -14,3 +14,6 @@ Renderer: Three.js 0.160.1 (MIT), bundled in vendor/three.min.js.
 Four selectable maps: The Works, Canyon Outpost, Frost Station and Neon District. Press M to switch maps. Switching rebuilds that map; completed-map badges persist. Camera turns 360 degrees horizontally and looks up/down with the mouse (or arrow keys in fallback mode). Your equipped weapon and hand remain visible.
 
 Reach level 100 and clear all four maps to unlock Rebirth. Confirming resets level, XP, weapon unlocks and map completion, and permanently adds +50% XP per rebirth. Saves remain local to each browser/device. Feedback opens your email app addressed to chibachaseygaming@gmail.com; it does not send automatically.
+
+Play online without signing in: https://destruction-simulator.chibachaseygaming.chatgpt.site
+
