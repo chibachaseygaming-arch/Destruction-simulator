@@ -11,6 +11,11 @@
  if(id==='canyon'){for(const x of [-10,7])for(const z of [-9,2]){wall(x,z,4,9,'#c6814e');wall(x,z-1.4,4,9,'#d5a767')}wall(-5,-12,9,5,'#c6814e');wall(-4,3,7,3,'#d5a767');}
  if(id==='frost'){for(const cx of [-9,7])for(let r=0;r<7;r++){let width=7-Math.floor(r/2);for(let c=0;c<width;c++)put(cx+(c-(width-1)/2)*1.15,r,-5,'#79b8d0')}wall(-13,3,6,4,'#cee5ea');wall(6,4,6,4,'#cee5ea');wall(-4,-12,8,8,'#a3cddf');}
  if(id==='neon'){for(const x of [-11,7])for(const z of [-10,2])for(let r=0;r<11;r++)for(let c=0;c<4;c++)put(x+c*1.15,r,z,r%3===0?'#71d4c3':'#947ec2');for(let r=0;r<7;r++)for(let c=0;c<7-r;c++)put((c-(6-r)/2)*1.15,r,-3,'#de8db9');}
+ // Give the landmarks depth: destructible side walls and rear facades.
+ if(id==='works'){wall(-5.1,-6.1,10,7,'#cfaa76');for(let r=0;r<4;r++)for(let d=0;d<4;d++)put(-12,r,5-d*.68,'#a6b0a0');}
+ if(id==='canyon'){for(const x of [-10,10.45])for(const z of [-9,2])for(let r=0;r<9;r++)put(x,r,z-.7,'#d5a767');wall(-5,-13.4,9,5,'#dbab70');}
+ if(id==='frost'){for(const cx of [-9,7])for(let r=0;r<7;r++){const width=7-Math.floor(r/2);for(let c=0;c<width;c++)put(cx+(c-(width-1)/2)*1.15,r,-7,'#cee5ea')}wall(-4,-13.4,8,8,'#79b8d0');}
+ if(id==='neon'){for(const x of [-11,7])for(const z of [-10,2]){wall(x,z-1.4,4,11,'#556b99');for(let r=0;r<11;r++)put(x,r,z-.7,r%3===0?'#71d4c3':'#947ec2');}}
  return out;
  }
  const api={maps,layout};if(typeof module==='object'&&module.exports)module.exports=api;else root.GameMaps=api;

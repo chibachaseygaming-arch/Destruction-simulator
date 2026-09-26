@@ -17,3 +17,9 @@ Reach level 100 and clear all four maps to unlock Rebirth. Confirming resets lev
 
 Play online without signing in: https://destruction-simulator.chibachaseygaming.chatgpt.site
 
+
+## Overdrive update
+
+Seven combat families: melee, pulse powers, bullets, spread shotguns, piercing beams, traveling rockets, and debris-pulling vortex projectiles. Weapons share family models with unique tuning, rather than 100 unique 3D assets. Destroy orange barrels for chain reactions. Charge the E shockwave by breaking blocks. Three repeating demolition contracts award bonus XP; chain counters, a minimap, target durability, and end-of-map results track your run. Scroll switches unlocked weapons. Settings include mouse sensitivity, mute, and a performance graphics mode. F toggles fullscreen.
+
+Run tests with `npm test`. Save keys and the level-50 gun unlock remain compatible. Progress is browser-local.
